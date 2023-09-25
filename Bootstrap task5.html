@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<title> Bootstrap task5 </title>
+<head>
+<style>
+  #success_message{ display: none;}
+</style>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+  
+
+   <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+    <a href="Bootstrap task-5.js" ></a>
+    
+<!-- Text input-->
+
+<div class="form-group">
+ <label class="col-md-4 control-label">First Name</label>  
+ <div class="col-md-4 inputGroupContainer">
+ <div class="input-group">
+ <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+ <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+   </div>
+ </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+ <label class="col-md-4 control-label" >Last Name</label> 
+   <div class="col-md-4 inputGroupContainer">
+   <div class="input-group">
+ <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+ <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+   </div>
+ </div>
+</div>
+
+<!-- Text input-->
+      <div class="form-group">
+ <label class="col-md-4 control-label">E-Mail</label>  
+   <div class="col-md-4 inputGroupContainer">
+   <div class="input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+ <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+   </div>
+ </div>
+</div>
+
+
+<!-- Text input-->
+      
+<div class="form-group">
+ <label class="col-md-4 control-label">Phone #</label>  
+   <div class="col-md-4 inputGroupContainer">
+   <div class="input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+ <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+   </div>
+ </div>
+</div>
+
+<!-- Text input-->
+     
+<div class="form-group">
+ <label class="col-md-4 control-label">Address</label>  
+   <div class="col-md-4 inputGroupContainer">
+   <div class="input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+ <input name="address" placeholder="Address" class="form-control" type="text">
+   </div>
+ </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+ <label class="col-md-4 control-label">City</label>  
+   <div class="col-md-4 inputGroupContainer">
+   <div class="input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+ <input name="city" placeholder="city" class="form-control"  type="text">
+   </div>
+ </div>
+</div>
+
+<!-- Select Basic -->
+  
+<div class="form-group"> 
+ <label class="col-md-4 control-label">State</label>
+   <div class="col-md-4 selectContainer">
+   <div class="input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+   <select name="state" class="form-control selectpicker" >
+     <option value=" " >Please select your state</option>
+     <option> Andhra pradesh</option>
+     <option> Arunachal Pradesh </option>
+     <option> Assam </option>
+     <option> Bihar</option>
+     <option> Chattisgarh </option>
+     <option> Goa </option>
+     <option> Gujarat</option>
+     <option> Haryana </option>
+     <option> Himachal Pradesh</option>
+     <option> Jarkhand</option>
+     <option> Karnataka </option>
+     <option> Kerala</option>
+     <option> Madhya pradesh</option>
+     <option> Maharasthra</option>
+     <option> Manipur</option>
+     <option> Meghalaya</option>
+     <option> Mizoram</option>
+     <option> Nagaland</option>
+     <option> Odisha</option>
+     <option> Punjab</option>
+     <option> Rajasthan</option>
+     <option> Sikkim</option>
+     <option> Tamil Nadu</option>
+     <option> Tripura</option>
+     <option> Telangana</option>
+     <option> Uttar Pradesh</option>
+     <option> Uttarakhand</option>
+     <option> West Bengal</option>
+   </select>
+ </div>
+</div>
+</div>
+
+
+
+
+<!-- radio checks -->
+<div class="form-group">
+                       <label class="col-md-4 control-label">Do you have hosting?</label>
+                       <div class="col-md-4">
+                           <div class="radio">
+                               <label>
+                                   <input type="radio" name="hosting" value="yes" /> Yes
+                               </label>
+                           </div>
+                           <div class="radio">
+                               <label>
+                                   <input type="radio" name="hosting" value="no" /> No
+                               </label>
+                           </div>
+                       </div>
+                   </div>
+
+<!-- Text area -->
+ 
+<div class="form-group">
+ <label class="col-md-4 control-label">Project Description</label>
+   <div class="col-md-4 inputGroupContainer">
+   <div class="input-group">
+       <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+ </div>
+ </div>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+ <label class="col-md-4 control-label"></label>
+ <div class="col-md-4">
+   <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+ </div>
+</div>
+
+</fieldset>
+
+ <script> 
+   $(document).ready(function() {
+    $('#Contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            }
+        })
+});
+</script>  
+</form>
+ </head> 
+</body>
+</html>
